@@ -41,11 +41,12 @@ for ( String s : data){
     String[] values = s.split(",");
     String name = values[0].trim();
     String beskrivelse = values[1].trim();
-
+    System.out.println("Samlet pris: " + samletPris + " kr");
 try {
     double pris = Double.parseDouble(values[2].trim());
     samletPris+= pris;
     System.out.println( name + " - " +  beskrivelse +  " " + " " + pris + "Kr" );
+
 
 } catch (NumberFormatException e){
     System.out.println(" kunne ikke læse besked");
