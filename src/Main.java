@@ -23,7 +23,8 @@
 //}
 
 
-// opgave 4
+// opgave 4+5
+
 import java.util.ArrayList;
 public class Main {
 
@@ -40,11 +41,11 @@ for ( String s : data){
     String[] values = s.split(",");
     String name = values[0].trim();
     String beskrivelse = values[1].trim();
+
+try {
     double pris = Double.parseDouble(values[2].trim());
     samletPris+= pris;
     System.out.println( name + " - " +  beskrivelse +  " " + " " + pris + "Kr" );
-try {
-    double pris = Double.parseDouble(values[2].trim());
 
 } catch (NumberFormatException e){
     System.out.println(" kunne ikke læse besked");
