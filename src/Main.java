@@ -44,9 +44,11 @@ for ( String s : data){
     samletPris+= pris;
     System.out.println( name + " - " +  beskrivelse +  " " + " " + pris + "Kr" );
 try {
-    data.add("Vand, Stille kildevand, gratis");
-}
+    double pris = Double.parseDouble(values[2].trim());
 
+} catch (NumberFormatException e){
+    System.out.println(" kunne ikke læse besked");
+}
 
 }
 }
