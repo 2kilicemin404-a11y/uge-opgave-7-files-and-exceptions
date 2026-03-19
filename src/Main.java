@@ -1,25 +1,20 @@
 import java.util.Scanner;
+
 public class Main {
+
     Scanner scan = new Scanner(System.in);
 
-
-
-   try {
-        public int promptNumber (String msg);
-            System.out.println(msg);
-    }
-       catch(return Integer.parseInt(scan.nextLine()));{
-
+    public int promptNumber(String msg) {
+        System.out.println(msg);
+        try {
+            return Integer.parseInt(scan.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println(" Didnt prompt number! ");
+return promptNumber(msg);
         }
     }
 
 
-void main() {
-
-
 }
-
-}
-
 
 
