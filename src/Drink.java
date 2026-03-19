@@ -1,3 +1,6 @@
+// opgave 2
+
+
 public class Drink {
     double price;
 
@@ -10,6 +13,7 @@ public class Drink {
             throw new IllegalArgumentException("din besked her" + price);
         }
         return price;
+
     }
 
 
